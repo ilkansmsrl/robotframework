@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200702 23:58:01.727" rpa="false">
+<suite id="s1" name="Requests" source="C:\Users\ilkan\PycharmProjects\bilyoner\Test\Requests.robot">
+<test id="s1-t1" name="Post_Request">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>AddData</arg>
+<arg>${Base_url}</arg>
+</arguments>
+<msg timestamp="20200702 23:58:02.178" level="INFO">Creating Session using : alias=AddData, url=http://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200702 23:58:02.177" endtime="20200702 23:58:02.178"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>firt_name=ilkan</arg>
+<arg>middle_name=deneme</arg>
+<arg>last_name=simsirel</arg>
+<arg>date_of_birth=01/01/1998</arg>
+</arguments>
+<assign>
+<var>${body}</var>
+</assign>
+<msg timestamp="20200702 23:58:02.180" level="INFO">${body} = {'firt_name': 'ilkan', 'middle_name': 'deneme', 'last_name': 'simsirel', 'date_of_birth': '01/01/1998'}</msg>
+<status status="PASS" starttime="20200702 23:58:02.179" endtime="20200702 23:58:02.180"></status>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
+<doc>Send a POST request on the session object found using the
+given `alias`</doc>
+<arguments>
+<arg>AddData</arg>
+<arg>/api/studentsDetails</arg>
+<arg>data=${body}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20200702 23:58:04.674" level="INFO">POST Request : url=http://thetestingworldapi.com//api/studentsDetails 
+ path_url=//api/studentsDetails 
+ headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '82'} 
+ body=firt_name=ilkan&amp;middle_name=deneme&amp;last_name=simsirel&amp;date_of_birth=01%2F01%2F1998 
+ </msg>
+<msg timestamp="20200702 23:58:04.674" level="INFO">POST Response : url=http://thetestingworldapi.com//api/studentsDetails 
+ status=415, reason=Unsupported Media Type 
+ body={"Message":"The request contains an entity body but no Content-Type header. The inferred media type 'application/octet-stream' is not supported for this resource."} 
+ </msg>
+<msg timestamp="20200702 23:58:04.674" level="INFO">${response} = &lt;Response [415]&gt;</msg>
+<status status="PASS" starttime="20200702 23:58:02.180" endtime="20200702 23:58:04.674"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<status status="PASS" starttime="20200702 23:58:04.675" endtime="20200702 23:58:04.675"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.content}</arg>
+</arguments>
+<status status="PASS" starttime="20200702 23:58:04.676" endtime="20200702 23:58:04.677"></status>
+</kw>
+<status status="PASS" starttime="20200702 23:58:02.177" endtime="20200702 23:58:04.677" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200702 23:58:01.732" endtime="20200702 23:58:04.679"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Requests">Requests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
