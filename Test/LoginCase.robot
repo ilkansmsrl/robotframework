@@ -24,7 +24,6 @@ unsuccessful testcase
     Input Text  ${USER_NAME}  30119297979
     Input Text  ${USER_PASSWORD}  Smsrl.683
     homepageApp.click login
-    sleep  1
     homepageApp.verify error message
     sleep  2
 

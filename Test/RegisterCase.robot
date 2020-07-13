@@ -15,6 +15,7 @@ successful testcase
     homepageApp.go to homepage
     registerpageApp.go to registerbutton click
     Wait Until Element Is Visible  ${UYEOL_BUTTON}
+    debug
     Input Text  ${USER_FIRSTNAME}  ilkan
     Input Text  ${USER_LASTNAME}  şimşirel
     Input Text  ${CITIZENSHIP_NUMBER}  30119297978
