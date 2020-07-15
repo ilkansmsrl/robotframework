@@ -17,7 +17,7 @@ go to app
 
 go to login
     go to app
-    Wait Until Element Is Visible  ${LOGİN_BUTTON}
+    Wait Until Element Is Visible  ${LOGİN_BUTTON}  10
     sleep  2
     Click Button  ${LOGİN_BUTTON}
     sleep  1

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200715 02:04:19.069" rpa="false">
-<suite id="s1" name="Bet" source="C:\Users\ilkan\PycharmProjects\bilyoner\Test\bet.robot">
-<test id="s1-t1" name="tribünlike testcase">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200715 11:17:33.965" rpa="false">
+<suite id="s1" name="LoginCase" source="C:\Users\ilkan\PycharmProjects\bilyoner\Test\LoginCase.robot">
+<test id="s1-t1" name="successful testcase">
 <kw name="start session" library="utils" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -10,14 +10,14 @@
 <arg>chrome</arg>
 <arg>add_argument("--disable-popup-blocking"); add_argument("--ignore-certificate-errors");</arg>
 </arguments>
-<msg timestamp="20200715 02:04:20.637" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200715 02:04:20.636" endtime="20200715 02:04:25.599"></status>
+<msg timestamp="20200715 11:17:34.485" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200715 11:17:34.485" endtime="20200715 11:17:38.078"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200715 02:04:25.599" endtime="20200715 02:04:27.872"></status>
+<status status="PASS" starttime="20200715 11:17:38.078" endtime="20200715 11:17:40.198"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:20.636" endtime="20200715 02:04:27.872"></status>
+<status status="PASS" starttime="20200715 11:17:34.484" endtime="20200715 11:17:40.198"></status>
 </kw>
 <kw name="go to login" library="homepageApp">
 <kw name="go to login" library="homepage">
@@ -27,18 +27,18 @@
 <arguments>
 <arg>${HOME_PAGE}</arg>
 </arguments>
-<msg timestamp="20200715 02:04:27.878" level="INFO">Opening url 'https://www.bilyoner.com/'</msg>
-<status status="PASS" starttime="20200715 02:04:27.877" endtime="20200715 02:04:31.349"></status>
+<msg timestamp="20200715 11:17:40.202" level="INFO">Opening url 'https://www.bilyoner.com/'</msg>
+<status status="PASS" starttime="20200715 11:17:40.201" endtime="20200715 11:17:43.228"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200715 02:04:33.350" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200715 02:04:31.349" endtime="20200715 02:04:33.350"></status>
+<msg timestamp="20200715 11:17:45.231" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200715 11:17:43.229" endtime="20200715 11:17:45.231"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:27.876" endtime="20200715 02:04:33.350"></status>
+<status status="PASS" starttime="20200715 11:17:40.200" endtime="20200715 11:17:45.232"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -46,35 +46,35 @@
 <arg>${LOGİN_BUTTON}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" starttime="20200715 02:04:33.351" endtime="20200715 02:04:33.412"></status>
+<status status="PASS" starttime="20200715 11:17:45.232" endtime="20200715 11:17:45.275"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200715 02:04:35.414" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200715 02:04:33.412" endtime="20200715 02:04:35.414"></status>
+<msg timestamp="20200715 11:17:47.277" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200715 11:17:45.275" endtime="20200715 11:17:47.277"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${LOGİN_BUTTON}</arg>
 </arguments>
-<msg timestamp="20200715 02:04:35.415" level="INFO">Clicking button '//button[@type='button' and @class='btn btn btn-login']'.</msg>
-<status status="PASS" starttime="20200715 02:04:35.414" endtime="20200715 02:04:35.665"></status>
+<msg timestamp="20200715 11:17:47.279" level="INFO">Clicking button '//button[@type='button' and @class='btn btn btn-login']'.</msg>
+<status status="PASS" starttime="20200715 11:17:47.277" endtime="20200715 11:17:47.424"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20200715 02:04:36.667" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200715 02:04:35.666" endtime="20200715 02:04:36.667"></status>
+<msg timestamp="20200715 11:17:48.426" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200715 11:17:47.424" endtime="20200715 11:17:48.426"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:27.875" endtime="20200715 02:04:36.667"></status>
+<status status="PASS" starttime="20200715 11:17:40.199" endtime="20200715 11:17:48.427"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:27.874" endtime="20200715 02:04:36.668"></status>
+<status status="PASS" starttime="20200715 11:17:40.198" endtime="20200715 11:17:48.427"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -82,8 +82,8 @@
 <arg>${USER_NAME}</arg>
 <arg>30119297978</arg>
 </arguments>
-<msg timestamp="20200715 02:04:36.673" level="INFO">Typing text '30119297978' into text field 'username'.</msg>
-<status status="PASS" starttime="20200715 02:04:36.672" endtime="20200715 02:04:37.032"></status>
+<msg timestamp="20200715 11:17:48.428" level="INFO">Typing text '30119297978' into text field 'username'.</msg>
+<status status="PASS" starttime="20200715 11:17:48.428" endtime="20200715 11:17:48.571"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -91,8 +91,8 @@
 <arg>${USER_PASSWORD}</arg>
 <arg>Smsrl.683</arg>
 </arguments>
-<msg timestamp="20200715 02:04:37.034" level="INFO">Typing text 'Smsrl.683' into text field 'password'.</msg>
-<status status="PASS" starttime="20200715 02:04:37.033" endtime="20200715 02:04:37.449"></status>
+<msg timestamp="20200715 11:17:48.572" level="INFO">Typing text 'Smsrl.683' into text field 'password'.</msg>
+<status status="PASS" starttime="20200715 11:17:48.572" endtime="20200715 11:17:48.749"></status>
 </kw>
 <kw name="click login" library="homepageApp">
 <kw name="click login" library="homepage">
@@ -101,152 +101,32 @@
 <arguments>
 <arg>${USER_LOGİN_BUTTON}</arg>
 </arguments>
-<msg timestamp="20200715 02:04:37.453" level="INFO">Clicking button '//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20200715 02:04:37.452" endtime="20200715 02:04:37.735"></status>
+<msg timestamp="20200715 11:17:48.752" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20200715 11:17:48.752" endtime="20200715 11:17:48.864"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:37.452" endtime="20200715 02:04:37.736"></status>
+<status status="PASS" starttime="20200715 11:17:48.751" endtime="20200715 11:17:48.864"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:37.451" endtime="20200715 02:04:37.736"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20200715 02:04:39.738" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200715 02:04:37.737" endtime="20200715 02:04:39.738"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${TRİBÜN}</arg>
-<arg>timeout=10</arg>
-</arguments>
-<status status="PASS" starttime="20200715 02:04:39.740" endtime="20200715 02:04:39.796"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${TRİBÜN}</arg>
-</arguments>
-<msg timestamp="20200715 02:04:39.797" level="INFO">Clicking element '//span[text()='TRİBÜN']'.</msg>
-<status status="PASS" starttime="20200715 02:04:39.797" endtime="20200715 02:04:39.884"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${USER_SEARCH_ICON}</arg>
-<arg>timeout=10</arg>
-</arguments>
-<status status="PASS" starttime="20200715 02:04:39.884" endtime="20200715 02:04:40.925"></status>
+<status status="PASS" starttime="20200715 11:17:48.749" endtime="20200715 11:17:48.864"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200715 02:04:42.930" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200715 02:04:40.927" endtime="20200715 02:04:42.930"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${USER_SEARCH_ICON}</arg>
-</arguments>
-<msg timestamp="20200715 02:04:42.934" level="INFO">Clicking element '//div[@class='header-search']'.</msg>
-<status status="PASS" starttime="20200715 02:04:42.933" endtime="20200715 02:04:43.219"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<msg timestamp="20200715 02:04:44.225" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200715 02:04:43.223" endtime="20200715 02:04:44.225"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${USER_SEARCH_INPUT}</arg>
-<arg>timeout=10</arg>
-</arguments>
-<status status="PASS" starttime="20200715 02:04:44.226" endtime="20200715 02:04:44.258"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${USER_SEARCH_INPUT}</arg>
-<arg>Onur_Demir</arg>
-</arguments>
-<msg timestamp="20200715 02:04:44.259" level="INFO">Typing text 'Onur_Demir' into text field '//input[@type='text']'.</msg>
-<status status="PASS" starttime="20200715 02:04:44.259" endtime="20200715 02:04:44.442"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20200715 02:04:46.444" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200715 02:04:44.442" endtime="20200715 02:04:46.444"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${USER_IMG}</arg>
-<arg>timeout=10</arg>
-</arguments>
-<status status="PASS" starttime="20200715 02:04:46.445" endtime="20200715 02:04:46.486"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${USER_IMG}</arg>
-</arguments>
-<msg timestamp="20200715 02:04:46.487" level="INFO">Clicking element '//img[@class='profile__avatar__image']'.</msg>
-<status status="PASS" starttime="20200715 02:04:46.487" endtime="20200715 02:04:46.643"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20200715 02:04:48.646" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200715 02:04:46.644" endtime="20200715 02:04:48.646"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${USER_LIKE}</arg>
-<arg>timeout=10</arg>
-</arguments>
-<status status="PASS" starttime="20200715 02:04:48.647" endtime="20200715 02:04:48.689"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${USER_LIKE}</arg>
-</arguments>
-<msg timestamp="20200715 02:04:48.691" level="INFO">Clicking element '//i[@class='icon ic_heart empty-heart liked-heart'][1]'.</msg>
-<status status="PASS" starttime="20200715 02:04:48.690" endtime="20200715 02:04:48.794"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2</arg>
-</arguments>
-<msg timestamp="20200715 02:04:50.797" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200715 02:04:48.796" endtime="20200715 02:04:50.797"></status>
+<msg timestamp="20200715 11:17:50.867" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200715 11:17:48.865" endtime="20200715 11:17:50.867"></status>
 </kw>
 <kw name="close session" library="utils" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200715 02:04:50.821" endtime="20200715 02:04:53.489"></status>
+<status status="PASS" starttime="20200715 11:17:50.868" endtime="20200715 11:17:53.288"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:50.820" endtime="20200715 02:04:53.489"></status>
+<status status="PASS" starttime="20200715 11:17:50.868" endtime="20200715 11:17:53.288"></status>
 </kw>
-<status status="PASS" starttime="20200715 02:04:20.634" endtime="20200715 02:04:53.490" critical="yes"></status>
+<status status="PASS" starttime="20200715 11:17:34.483" endtime="20200715 11:17:53.289" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200715 02:04:19.074" endtime="20200715 02:04:53.492"></status>
+<doc>My First robot test</doc>
+<status status="PASS" starttime="20200715 11:17:33.968" endtime="20200715 11:17:53.291"></status>
 </suite>
 <statistics>
 <total>
@@ -256,7 +136,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Bet">Bet</stat>
+<stat pass="1" fail="0" id="s1" name="LoginCase">LoginCase</stat>
 </suite>
 </statistics>
 <errors>
