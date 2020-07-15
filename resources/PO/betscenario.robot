@@ -25,7 +25,7 @@ ${TRİBÜN}  //span[text()='TRİBÜN']
 ${USER_SEARCH_ICON}  //div[@class='header-search']
 ${USER_SEARCH_INPUT}  //input[@type='text']
 ${USER_IMG}  //img[@class='profile__avatar__image']
-${USER_LIKE}  //i[@class='icon ic_heart empty-heart liked-heart'][3]
+${USER_LIKE}  //*[@class='icon ic_heart empty-heart liked-heart'][1]
 
 
 
